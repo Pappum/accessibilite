@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Web Agency</title>
+		<title>Accueil | Web Agency</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,17 +15,41 @@
 		
 	</head>
 	<body>
-		<header>
-			<div class="wrapper">
-				<nav>
-					<ul>
-						<li><a href="#"></a>Accueil</li>
-						<li><a href="video.html"></a>Vidéo</li>
-						<li><a href="son.html"></a>Son</li>
-						<li><a href="contact.html"></a>Contact</li>
-					</ul>
-				</nav>
-			</div>
+		<header role="banner">
+			<nav role="navigation" aria-label="Menu principal" class="wrapper">
+				<ul class="evitement">
+				   <li><a href="#contenu">Aller au contenu</a></li>
+				   <li><a href="#menu">Aller au menu</a></li> 
+				   <li><a href="#recherche">Aller à la recherche</a></li>
+				</ul>
+
+				<ul id="menu">
+					<li><a href="#">Accueil</a></li>
+					<li><a href="video.html">Vidéo</a></li>
+					<li><a href="son.html">Son</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<div id="recherche" role="search">
+					<form>
+						<input type="text" title="Recherche par mots-clés" />
+						<input type="submit" value="Rechercher" />
+					</form>
+				</div>
+			</nav>
 		</header>
+
+		<main id="contenu" role="main">
+			<nav role="navigation" aria-label="Fil d'Ariane"></nav>
+		</main>
+
+		<footer role="contentinfo">
+			<ul>
+				<li><a href="apropos.html"></a>A propos</li>
+				<li><a href="mentions.html"></a>Mentions légales</li>
+			</ul>
+			<p>© Web Agency</p>
+		</footer>
+
 	</body>
 </html>
