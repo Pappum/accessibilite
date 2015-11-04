@@ -4,6 +4,7 @@
 }
 header{
 	background-color:red;
+	height:90px;
 }
 header nav #evitement{
 	list-style: none;
@@ -26,8 +27,28 @@ header nav #menu a{
 	color:black;
 	text-decoration: none;
 }
+header nav #menu{
+	float:left;
+}
+header nav #recherche{
+	float:right;
+	padding: 15px;
+    margin-top: .75em;
+}
+header nav #recherche input[type="text"]{
+	border-radius: 10px;
+    border: none;
+    height: 25px;
+}
 footer{
 	background-color: blue;
+}
+section{
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+section:nth-of-type(1){
+    padding:0px;
 }
 section:nth-of-type(2){
     background-color:green;
