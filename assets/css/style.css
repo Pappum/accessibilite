@@ -37,3 +37,20 @@ section:nth-of-type(3){
     width: 100%;
     height: auto;
 }
+
+.owl-controls {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.owl-theme .owl-controls .owl-page span,
+.owl-theme .owl-controls .owl-buttons div {
+	background: #FFF;
+	color: #000;
+	opacity: 1;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+	background: red;
+}
