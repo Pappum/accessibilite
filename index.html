@@ -5,47 +5,48 @@
 		<title>Accueil | Web Agency</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<!-- Import Jquery -->
-		<script src="assets/js/jquery-2.1.4.min.js"></script>
-
+		
 		<!-- Owl Carousel -->
 		<link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
 		<link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
 		<link rel="stylesheet" href="assets/owl-carousel/owl.transitions.css">
-		<script src="assets/owl-carousel/owl.carousel.js"></script>
-
+		
 		<!-- Styles -->
 		<link rel="stylesheet" href="assets/css/knacss.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 
-		<!-- JS -->
-		<script src="assets/js/function.js"></script>
-		
 	</head>
 	<body>
 		<header role="banner">
-			<nav id="navigation" role="navigation" aria-label="Menu principal" class="wrapper">
-				<ul id="evitement">
-				   <li><a href="#contenu" tabindex="1">Aller au contenu</a></li>
-				   <li><a href="#menu" tabindex="2">Aller au menu</a></li> 
-				   <li><a href="#recherche" tabindex="3">Aller à la recherche</a></li>
-				</ul>
+            <ul id="evitement">
+               <li><a href="#contenu" tabindex="1">Aller au contenu</a></li>
+               <li><a href="#menu" tabindex="2">Aller au menu</a></li> 
+               <li><a href="#recherche" tabindex="3">Aller à la recherche</a></li>
+            </ul>
+            <nav id="navigation" role="navigation" aria-label="Menu principal" class="wrapper">
+                <ul class="nav-menu" id="menu">
+                    <li><a href="#" title="Accueil (rubrique courante)" tabindex="4">Accueil</a></li>
+                    <li class="nav-item">
+                        <a href="about.html" title="A propos" tabindex="5">A propos</a>
+                        <div class="sub-nav">
+                            <ul class="sub-nav-group">
+                                <li><a href="#">Action Adventure</a></li>
+                                <li><a href="#">Children Family</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-				<ul id="menu">
-                    <li><a href="#" title="Accueil (rubrique courante)" class="active" tabindex="4">Accueil</a></li>
-                    <li><a href="about.html" title="A propos" tabindex="5">A propos</a></li>
                     <li><a href="son.html" title="" tabindex="6">Son</a></li>
-                    <li><a href="contact.html" title="" tabindex="7">Contact</a></li>
-				</ul>
+                    <li><a href="contact.html" title="Contact" tabindex="7">Contact</a></li>
+                </ul>
 
-				<div id="recherche" role="search">
+                <div id="recherche" role="search">
                     <form>
                         <input type="text" placeholder="Rechercher" title="Recherche par mots-clés" />
                         <input type="submit" value="Ok" />
                     </form>
-				</div>
-			</nav>
+                </div>
+            </nav>
 		</header>
 
 		<main id="contenu" role="main">
@@ -110,6 +111,14 @@
     			<p>© Web Agency</p>
             </div>
 		</footer>
+		
+		
+		<!-- Import Jquery -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/jquery-accessibleMegaMenu.js"></script>
 
+        <script src="assets/owl-carousel/owl.carousel.js"></script>
+        <script src="assets/js/function.js"></script>
+        
 	</body>
 </html>
