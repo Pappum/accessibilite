@@ -23,6 +23,10 @@ header nav #menu li{
 	display: inline-block;
 	padding:15px;
 }
+header nav #menu .active{
+	border-bottom:2px solid white;
+	padding-bottom: 5px;
+}
 header nav #menu a{
 	color:black;
 	text-decoration: none;
@@ -56,6 +60,10 @@ section:nth-of-type(2){
 section:nth-of-type(3){
     background-color:yellow;
 }
+section:nth-of-type(3) img{
+	width:100px;
+	border-radius: 100px;
+}
 section:nth-of-type(4){
     background-color:orange;
 }
@@ -83,8 +91,6 @@ section:nth-of-type(4){
 table{
 	margin-bottom: 0rem !important;
 }
-
-
 
 
 
