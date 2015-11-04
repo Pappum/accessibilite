@@ -13,11 +13,13 @@ header nav #evitement li{
 	display: inline-block;
 }
 header nav #evitement a{
-	color:transparent;
+	position: absolute;
+    left: -99999px;
 	text-decoration: none;
 }
 header nav #evitement a:focus, header nav #evitement a:hover{
 	color:black;
+    position: static;
 }
 header nav #menu li{
 	display: inline-block;
