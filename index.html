@@ -24,20 +24,25 @@
                <li><a href="#recherche" tabindex="3">Aller à la recherche</a></li>
             </ul>
             <nav id="navigation" role="navigation" aria-label="Menu principal" class="wrapper">
-                <ul class="nav-menu" id="menu">
-                    <li><a href="#" title="Accueil (rubrique courante)" tabindex="4">Accueil</a></li>
-                    <li class="nav-item">
-                        <a href="about.html" title="A propos" tabindex="5">A propos</a>
+                <ul role="menubar" aria-hidden="false" class="nav-menu" id="menu">
+                    <li role="menuitem"><a class="active" href="#" title="Accueil (rubrique courante)" tabindex="4">Accueil</a></li>
+                    
+                    <li role="menuitem"><a href="about.html" title="" tabindex="5">A propos</a></li>
+                    
+                    <li role="menuitem" aria-haspopup="true" class="nav-item">
+                        <a href="services.html" title="Nos services" tabindex="6">Nos services</a>
                         <div class="sub-nav">
-                            <ul class="sub-nav-group">
-                                <li><a href="#">Action Adventure</a></li>
-                                <li><a href="#">Children Family</a></li>
+                            <ul class="sub-nav-group" aria-hidden="true">
+                                <li><a href="#">Site internet</a></li>
+                                <li><a href="#">Webdesign</a></li>
+                                <li><a href="#">Solution mobile</a></li>
                             </ul>
                         </div>
                     </li>
 
-                    <li><a href="son.html" title="" tabindex="6">Son</a></li>
-                    <li><a href="contact.html" title="Contact" tabindex="7">Contact</a></li>
+                    <li role="menuitem"><a href="son.html" title="" tabindex="7">Son</a></li>
+                    
+                    <li role="menuitem"><a href="contact.html" title="Contact" tabindex="8">Contact</a></li>
                 </ul>
 
                 <div id="recherche" role="search">
@@ -64,18 +69,18 @@
                         <h2 class="txtcenter">Nos services</h2>
                         <div class="grid-3 txtcenter">
                             <div>
-                                <img src="assets/img/alexis.jpg" alt="BG">
-                                <h3>Lorem ipsum</h3>
+                                <span class="icone"><img src="assets/img/web.png" alt="Icone"></span>
+                                <h3>Site internet</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur quam at urna blandit, vitae vestibulum enim ornare. Curabitur mi turpis, tempor dictum neque in, mattis vestibulum dolor.</p>
                             </div>
                             <div>
-                                <img src="assets/img/alexis.jpg" alt="BG">
-                                <h3>Lorem ipsum</h3>
+                                <span class="icone"><img src="assets/img/web.png" alt="Icone"></span>
+                                <h3>Webdesign</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur quam at urna blandit, vitae vestibulum enim ornare. Curabitur mi turpis, tempor dictum neque in, mattis vestibulum dolor.</p>
                             </div>
                             <div>
-                                <img src="assets/img/alexis.jpg" alt="BG">
-                                <h3>Lorem ipsum</h3>
+                                <span class="icone"><img src="assets/img/web.png" alt="Icone"></span>
+                                <h3>Solution mobile</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur quam at urna blandit, vitae vestibulum enim ornare. Curabitur mi turpis, tempor dictum neque in, mattis vestibulum dolor.</p>
                             </div>
                         </div>
