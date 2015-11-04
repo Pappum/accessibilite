@@ -9,5 +9,5 @@ $(document).ready(function() {
 		singleItem: true
  
 	});
- 
+
 });
