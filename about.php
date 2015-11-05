@@ -106,13 +106,52 @@
         <script src="assets/owl-carousel/owl.carousel.js"></script>
         <script src="assets/js/function.js"></script>
 
+        <?php
+
+            // A changer en fonction du serveur
+        
+            $adresse = 'localhost';
+            $user = 'root';
+            $password = 'root';
+            $base = 'test';
+        
+            $db = mysqli_connect($adresse, $user, $password, $base) or die(mysqli_connect_error());
+
+            $reqValue = "
+                    SELECT *
+                    FROM bite
+            ";
+            $rValue = mysqli_query($db, $reqValue) or die(mysqli_connect_error());
+            $tableValue = mysqli_fetch_array($rValue);
+        
+        ?>
+
         <script>
+
+            var valueOnLoad = new Array();
+            for(var i = 1 ; i <= 6 ; i++) {
+                valueOnLoad[i] = $('#val'+i).html();
+            }
+
+            console.log(valueOnLoad);
+
             $("#save").click(function(){
-                $("table > tbody > tr > td").each(function() {
-                    var content = $(this).html();
-                    $("#results").text(content);
-                    //alert(content);
-                });
+                // $("table > tbody > tr > td").each(function() {
+                //     var content = $(this).html();
+                //     $("#results").text(content);
+                //     //alert(content);
+                // });
+
+                var valueOnSave = new Array();
+                for(var i = 1 ; i <= 6 ; i++) {
+                    valueOnSave[i] = $('#val'+i).html();
+
+                    if(valueOnSave[i] == valueOnLoad[i]){
+                        <?php $sql= "
+                            INSERT INTO identification (id, login , motdepasse, nom, prenom, age, email, sexe) 
+                            VALUES ('', '$login', '$MDP', '$nom', '$prenom', '$age', '$email', '$sexe')"; ?>
+                }
+
             });
         </script
 
