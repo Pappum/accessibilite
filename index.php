@@ -46,7 +46,7 @@
                         <li role="menuitem"><a class="active" href="#" title="Accueil (rubrique courante)" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
 
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
-                            <a href="#" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a>
+                            <a href="video.php" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group" aria-hidden="true">
                                     <li><a href="video.php" title="Vidéo" tabindex="<?php echo $i += 1; ?>">Vidéo</a></li>
@@ -57,12 +57,12 @@
                         </li>
                         
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
-                            <a href="#" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a>
+                            <a href="site.php" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group" aria-hidden="true">
                                     <li><a href="site.php" title="Site internet" tabindex="<?php echo $i += 1; ?>">Site internet</a></li>
-                                    <li><a href="#" title="Webdesign" tabindex="<?php echo $i += 1; ?>">Webdesign</a></li>
-                                    <li><a href="#" title="Solution mobile" tabindex="<?php echo $i += 1; ?>">Solution mobile</a></li>
+                                    <li><a href="webdesign.php" title="Webdesign" tabindex="<?php echo $i += 1; ?>">Webdesign</a></li>
+                                    <li><a href="mobile.php" title="Solution mobile" tabindex="<?php echo $i += 1; ?>">Solution mobile</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -95,22 +95,22 @@
                         <hr>
                         <div class="grid-3-small-1 txtcenter">
                             <div>
-                                <a href="#" title="Site internet" tabindex="<?php echo $i += 1; ?>"><span class="icone"><img src="assets/images/web.png" alt="Site internet"></span></a>
+                                <a href="site.php" title="Site internet" tabindex="<?php echo $i += 1; ?>"><span class="icone"><img src="assets/images/web.png" alt="Site internet"></span></a>
                                 <h3>Site internet</h3>
                                 <p>Création de site sur mesure, à votre image et adapté à vos objectifs. Nous donnons vie à vos projets et nous vous accompagnons au quotidien dans la gestion de votre site.</p>
-                                <a href="#" tabindex="<?php echo $i += 1; ?>" title="En savoir plus sur les sites internet" class="bouton">En savoir plus</a>
+                                <a href="site.php" tabindex="<?php echo $i += 1; ?>" title="En savoir plus sur les sites internet" class="bouton">En savoir plus</a>
                             </div>
                             <div>
-                                <a href="#" tabindex="<?php echo $i += 1; ?>" title="Webdesign"><span class="icone"><img src="assets/images/webdesign.png" alt="Webdesign"></span></a>
+                                <a href="webdesign.php" tabindex="<?php echo $i += 1; ?>" title="Webdesign"><span class="icone"><img src="assets/images/webdesign.png" alt="Webdesign"></span></a>
                                 <h3>Webdesign</h3>
                                 <p>De la création du logo à l'élaboration de la charte graphique, nous assurerons la conception graphique de votre site Internet ou de votre application web dans sa totalité.</p>
-                                <a href="#" tabindex="<?php echo $i += 1; ?>" title="En savoir plus sur le Webdesign" class="bouton">En savoir plus</a>
+                                <a href="webdesign.php" tabindex="<?php echo $i += 1; ?>" title="En savoir plus sur le Webdesign" class="bouton">En savoir plus</a>
                             </div>
                             <div>
-                                <a href="#" tabindex="<?php echo $i += 1; ?>" title="Solution mobile"><span class="icone"><img src="assets/images/mobile.png" alt="Solution mobile"></span></a>
+                                <a href="mobile.php" tabindex="<?php echo $i += 1; ?>" title="Solution mobile"><span class="icone"><img src="assets/images/mobile.png" alt="Solution mobile"></span></a>
                                 <h3>Solution mobile</h3>
                                 <p>Pour offrir toujours plus de performance et valeur ajoutée à ses clients, Web Agency maitrise la dernière technologie en matière de web mobile : le responsive design.</p>
-                                <a href="#" tabindex="<?php echo $i += 1; ?>" title="En savoir plus sur les solutions mobiles" class="bouton">En savoir plus</a>
+                                <a href="mobile.php" tabindex="<?php echo $i += 1; ?>" title="En savoir plus sur les solutions mobiles" class="bouton">En savoir plus</a>
                             </div>
                         </div>
                     </div>
@@ -133,9 +133,9 @@
             		<div>
             			<ul>
                             <span>Menu</span>
-                            <li><a href="#" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a></li>
-                            <li><a href="#" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a></li>
-                            <li><a href="#" title="Contact" tabindex="<?php echo $i += 1; ?>">Contact</a></li>
+                            <li><a href="video.php" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a></li>
+                            <li><a href="site.php" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a></li>
+                            <li><a href="contact.php" title="Contact" tabindex="<?php echo $i += 1; ?>">Contact</a></li>
 						</ul>
             		</div>
             		<div>

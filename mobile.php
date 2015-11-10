@@ -82,44 +82,54 @@
 
 		<main id="contenu" role="main">
             <section class="wrapper">
-                <h2>Créations de sites internet</h2>
-                <ul>
-                    <li>Utilisation du <abbr title="Hypertext Markup Language">HTML</abbr></li>
-                    <li>Utilisation du <abbr title="Cascading Style Sheets">CSS</abbr></li>
-                    <li>Utilisation du <abbr title="Javascript">JS</abbr></li>
-                </ul>
+                <h2>Mobile</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec posuere ipsum.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                In hac habitasse platea dictumst. Phasellus suscipit lorem quam. Praesent est arcu, blandit vitae tellus id,
+                finibus tristique lectus. Mauris eleifend iaculis sapien non elementum. Mauris placerat bibendum arcu, quis egestas
+                diam molestie non. Etiam nibh turpis, suscipit sit amet massa id, malesuada lobortis sapien. Sed at magna interdum,
+                consequat neque ac, scelerisque urna. Proin sagittis sem sapien, ac pharetra mi pellentesque tempor. Duis ornare
+                finibus elit auctor varius.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec posuere ipsum.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                In hac habitasse platea dictumst. Phasellus suscipit lorem quam. Praesent est arcu, blandit vitae tellus id,
+                finibus tristique lectus. Mauris eleifend iaculis sapien non elementum. Mauris placerat bibendum arcu, quis egestas
+                diam molestie non. Etiam nibh turpis, suscipit sit amet massa id, malesuada lobortis sapien. Sed at magna interdum,
+                consequat neque ac, scelerisque urna. Proin sagittis sem sapien, ac pharetra mi pellentesque tempor. Duis ornare
+                finibus elit auctor varius.</p>
             </section>
 		</main>
 
 		<footer role="contentinfo">
             <div class="wrapper">
-            	<div class="grid-4-medium-2">
-            		<div>
-            			<ul>
+                <div class="grid-4-medium-2">
+                    <div>
+                        <ul>
                             <span>Menu</span>
                             <li><a href="video.php" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a></li>
                             <li><a href="site.php" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a></li>
                             <li><a href="contact.php" title="Contact" tabindex="<?php echo $i += 1; ?>">Contact</a></li>
-						</ul>
-            		</div>
-            		<div>
-            		    <span>Contact</span>
-            		    <p>03 88 36 20 43<br>2 rue de Strasbourg<br>67500 Haguenau</p>
-            		</div>
-            		<div>
-            		    <span>Réseaux sociaux</span>
-            		    <p>
-            		        <a href="http://www.facebook.com" title="Lien page Facebook" tabindex="<?php echo $i += 1; ?>"><img src="assets/images/fb.png" alt="Logo Facebook"></a>
-            		        <a href="http://www.twitter.com" title="Lien page Twitter" tabindex="<?php echo $i += 1; ?>"><img src="assets/images/tw.png" alt="Logo Twitter"></a>
-            		    </p>
-            		</div>
-            		<div>
-            			<p>© Web Agency - <a tabindex="<?php echo $i += 1; ?>" href="#" title="Mentions légales">Mentions légales</a></p>
-            			<p><a tabindex="<?php echo $i += 1; ?>" href="accessibilite.php" title="Accessibilité">Accessibilité</a></p>
-            		</div>
-            	</div>
+                        </ul>
+                    </div>
+                    <div>
+                        <span>Contact</span>
+                        <p>03 88 36 20 43<br>2 rue de Strasbourg<br>67500 Haguenau</p>
+                    </div>
+                    <div>
+                        <span>Réseaux sociaux</span>
+                        <p>
+                            <a href="http://www.facebook.com" title="Lien page Facebook" tabindex="<?php echo $i += 1; ?>"><img src="assets/images/fb.png" alt="Logo Facebook"></a>
+                            <a href="http://www.twitter.com" title="Lien page Twitter" tabindex="<?php echo $i += 1; ?>"><img src="assets/images/tw.png" alt="Logo Twitter"></a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>© Web Agency - <a tabindex="<?php echo $i += 1; ?>" href="#" title="Mentions légales">Mentions légales</a></p>
+                        <p><a tabindex="<?php echo $i += 1; ?>" href="accessibilite.php" title="Accessibilité">Accessibilité</a></p>
+                    </div>
+                </div>
             </div>
-		</footer>
+        </footer>
 		
 		
 		<!-- Import Jquery -->

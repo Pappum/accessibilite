@@ -47,7 +47,7 @@
                         <li role="menuitem"><a href="index.php" title="Accueil" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
 
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
-                            <a href="#" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a>
+                            <a href="video.php" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group" aria-hidden="true">
                                     <li><a href="video.php" title="Vidéo" tabindex="<?php echo $i += 1; ?>">Vidéo</a></li>
@@ -58,12 +58,12 @@
                         </li>
                         
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
-                            <a href="#" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a>
+                            <a href="site.php" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group" aria-hidden="true">
                                     <li><a href="site.php" title="Site internet" tabindex="<?php echo $i += 1; ?>">Site internet</a></li>
-                                    <li><a href="#" title="Webdesign" tabindex="<?php echo $i += 1; ?>">Webdesign</a></li>
-                                    <li><a href="#" title="Solution mobile" tabindex="<?php echo $i += 1; ?>">Solution mobile</a></li>
+                                    <li><a href="webdesign.php" title="Webdesign" tabindex="<?php echo $i += 1; ?>">Webdesign</a></li>
+                                    <li><a href="mobile.php" title="Solution mobile" tabindex="<?php echo $i += 1; ?>">Solution mobile</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -147,9 +147,9 @@
             		<div>
             			<ul>
                             <span>Menu</span>
-                            <li><a href="#" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a></li>
-                            <li><a href="#" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a></li>
-                            <li><a href="#" title="Contact" tabindex="<?php echo $i += 1; ?>">Contact</a></li>
+                            <li><a href="video.php" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a></li>
+                            <li><a href="site.php" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a></li>
+                            <li><a href="contact.php" title="Contact" tabindex="<?php echo $i += 1; ?>">Contact</a></li>
 						</ul>
             		</div>
             		<div>
