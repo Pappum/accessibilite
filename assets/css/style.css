@@ -283,6 +283,20 @@ section .bouton{
     position: static;
 }
 
+
+
+
+
+
+
+#formulaire { text-align: center; }
+
+#formulaire form { margin: auto; }
+
+#formulaire form label span.obligatoire { color: #FF0000; }
+
+#formulaire form label span.form-error { display: none; }
+
 footer{
 	background-color: #F5F5F5;
     padding: 20px;

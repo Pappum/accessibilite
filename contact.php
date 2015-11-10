@@ -14,6 +14,7 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="assets/css/knacss-unminified.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	</head>
 	<body>
@@ -81,18 +82,63 @@
 		</header>
 
 		<main id="contenu" role="main">
-			<!-- <nav role="navigation" aria-label="Fil d'Ariane"></nav> -->
-				<section id="slider">
-					<div class="wrapper">
-						<form>
-							<label for="nom">
-								Votre nom *
-								<span>Veuillez renseigner votre nom</span>
-							</label>
-							<input type="text" id="nom" name="nom" required aria-invalid="true" />
-						</form>
-					</div>
-				</section>
+			<nav role="navigation" aria-label="Fil d'Ariane" id="fil">
+                <ul class="wrapper">
+                    <li><a href="index.php" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
+                    <li class="current">Tableau</li>
+                </ul>
+            </nav>
+			<section id="formulaire" class="wrapper">
+                <h1>Contact</h1>
+				<form>
+                    <div>
+                        <label for="nom">
+                            Votre nom <span class="obligatoire">*</span><br/>
+                            <span class="form-error error-nom">Veuillez renseigner votre nom</span>
+                        </label>
+                        <input type="text" id="nom" name="nom" required aria-invalid="true" tabindex="<?php echo $i += 1; ?>" />
+                    </div>
+                    <div>
+                        <label for="prenom">
+                            Votre prénom <span class="obligatoire">*</span><br/>
+                            <span class="form-error error-prenom">Veuillez renseigner votre prénom</span>
+                        </label>
+                        <input type="text" id="prenom" name="prenom" required aria-invalid="true" tabindex="<?php echo $i += 1; ?>" />
+                    </div>
+                    <div>
+                        <label for="mail">
+                            Votre adresse mail <span class="obligatoire">*</span><br/>
+                            <span class="form-error error-mail">Veuillez renseigner votre adresse mail</span>
+                        </label>
+                        <input type="mail" id="mail" name="mail" required aria-invalid="true" tabindex="<?php echo $i += 1; ?>" />
+                    </div>
+                    <div>
+                        <label for="tel">
+                            Votre téléphone <span c error-nomlass="obligatoire">*</span><br/>
+                            <span class="form-error error-tel">Veuillez renseigner votre téléphone</span>
+                        </label>
+                        <input type="tel" id="tel" name="tel" required aria-invalid="true" tabindex="<?php echo $i += 1; ?>" />
+                    </div>
+                    <div>
+                        <label for="sujet">
+                            Sujet de votre message <span class="obligatoire">*</span><br/>
+                            <span class="form-error error-sujet">Veuillez renseigner le sujet de votre message</span>
+                        </label>
+                        <input type="text" id="sujet" name="sujet" required aria-invalid="true" tabindex="<?php echo $i += 1; ?>" />
+                    </div>
+                    <div>
+                        <label for="message">
+                            Votre message <span class="obligatoire">*</span><br/>
+                            <span class="form-error error-message">Veuillez remplir votre message</span>
+                        </label>
+                        <textarea id="message" name="message" required aria-invalid="true" tabindex="<?php echo $i += 1; ?>"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Envoyer" onclick="if(envoyer()){submit();}"/>
+                        <input type="reset" value="Annuler" />
+                    </div>
+				</form>
+			</section>
 		</main>
 
 		<footer role="contentinfo">
@@ -130,7 +176,8 @@
 		<script src="assets/js/jquery-accessibleMegaMenu.js"></script>
 
 		<script src="assets/owl-carousel/owl.carousel.js"></script>
-		<script src="assets/js/function.js"></script>
+        <script src="assets/js/function.js"></script>
+		<script src="assets/js/form.js"></script>
 		
 	</body>
 </html>
