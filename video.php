@@ -98,7 +98,7 @@
                         <video width="640" height="360" poster="assets/images/poster.jpg" controls>
                             <!-- Lien vidéo -->
                             <source src="assets/media/video-web.mp4" type="video/mp4" />
-                            <source src="" type="video/webm" />
+                            <source src="assets/media/video-web.webm" type="video/webm" />
 
                             <!-- Sous titre -->
                             <track kind="subtitles" label="Sous-titre Anglais" src="assets/media/sous_titres_en.vtt" srclang="en" default />
