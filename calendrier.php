@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Web Agency | Agence web à Strasbourg</title>
+		<title>Calendrier | Agence web à Strasbourg</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
