@@ -47,7 +47,7 @@
                         <li role="menuitem"><a href="index.php" title="Accueil" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
 
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
-                            <a href="#" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a>
+                            <a href="video.php" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group" aria-hidden="true">
                                     <li><a href="video.php" title="Vidéo" tabindex="<?php echo $i += 1; ?>">Vidéo</a></li>
@@ -58,12 +58,12 @@
                         </li>
                         
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
-                            <a href="#" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a>
+                            <a href="site.php" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group" aria-hidden="true">
                                     <li><a href="site.php" title="Site internet" tabindex="<?php echo $i += 1; ?>">Site internet</a></li>
-                                    <li><a href="#" title="Webdesign" tabindex="<?php echo $i += 1; ?>">Webdesign</a></li>
-                                    <li><a href="#" title="Solution mobile" tabindex="<?php echo $i += 1; ?>">Solution mobile</a></li>
+                                    <li><a href="webdesign.php" title="Webdesign" tabindex="<?php echo $i += 1; ?>">Webdesign</a></li>
+                                    <li><a href="mobile.php" title="Solution mobile" tabindex="<?php echo $i += 1; ?>">Solution mobile</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -91,21 +91,34 @@
             <section id="liste-tableau" class="wrapper">
                 <p id="liste">Part du marché des navigateurs internet</p>
                 
+                <?php
+                    // A changer en fonction du serveur
+
+                    // Donnée en BDD
+                    $bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', 'root');
+                    $result = $bdd->query('SELECT * FROM navigateur WHERE annee="2015"');
+                    $data = $result->fetch(PDO::FETCH_OBJ);
+
+                    $result2 = $bdd->query('SELECT * FROM navigateur WHERE annee="2014"');
+                    $data2 = $result2->fetch(PDO::FETCH_OBJ);
+
+                ?>
+                
                 <ul>
                     <li>2015</li>
                     <ul>
-                        <li>Chrome (53,91%)</li>
-                        <li>Firefox (17,83%)</li>
-                        <li>IE (19,24%)</li>
+                        <li>Chrome (<?php echo $data->chrome; ?>)</li> 
+                        <li>Firefox (<?php echo $data->firefox; ?>)</li>
+                        <li>IE (<?php echo $data->ie; ?>)</li>
                     </ul>
                 </ul>
                 
                 <ul>
                     <li>2014</li>
                     <ul>
-                        <li>Chrome (48,78%)</li>
-                        <li>Firefox (19,57%)</li>
-                        <li>IE (23,19%)</li>
+                        <li>Chrome (<?php echo $data2->chrome; ?>)</li>
+                        <li>Firefox (<?php echo $data2->firefox; ?>)</li>
+                        <li>IE (<?php echo $data2->ie; ?>)</li>
                     </ul>
                 </ul>
                 
@@ -120,9 +133,9 @@
             		<div>
             			<ul>
                             <span>Menu</span>
-                            <li><a href="#" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a></li>
-                            <li><a href="#" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a></li>
-                            <li><a href="#" title="Contact" tabindex="<?php echo $i += 1; ?>">Contact</a></li>
+                            <li><a href="video.php" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a></li>
+                            <li><a href="site.php" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a></li>
+                            <li><a href="contact.php" title="Contact" tabindex="<?php echo $i += 1; ?>">Contact</a></li>
 						</ul>
             		</div>
             		<div>
