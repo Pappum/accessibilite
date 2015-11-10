@@ -84,7 +84,7 @@
 		<main id="contenu" role="main">
             <nav role="navigation" aria-label="Fil d'Ariane" id="fil">
                 <ul class="wrapper">
-                    <li>Accueil</li>
+                    <li><a href="index.php" title="Accueil" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
                     <li class="current">Liste tableau</li>
                 </ul>
             </nav>
@@ -110,7 +110,7 @@
                 </ul>
                 
                 <br>
-                <a id="content" href="tableau.php#sheh" tabindex="<?php echo $i += 1; ?>">Revenir sur la page précédente</a>
+                <a id="prec" href="tableau.php?return=true#sheh" tabindex="<?php echo $i += 1; ?>">Revenir sur la page précédente</a>
 			</section>
 		</main>
 

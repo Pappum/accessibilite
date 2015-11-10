@@ -14,8 +14,8 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="assets/css/knacss-unminified.css">
 		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        
 	</head>
 	<body>
 	
@@ -39,8 +39,7 @@
                     <button onclick="window.location.hash='#menu'" tabindex="<?php echo $tb += 1; ?>" accesskey="m">Aller au menu</button>
                     <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $tb += 1; ?>" accesskey="r">Aller à la recherche</button>
                 </div>
-                
-                
+                                
                 <h1>Web Agency</h1>
                 <nav id="navigation" role="navigation" aria-label="Menu principal">
                     <ul role="menubar" aria-hidden="false" class="nav-menu" id="menu">
@@ -84,7 +83,7 @@
 		<main id="contenu" role="main">
             <nav role="navigation" aria-label="Fil d'Ariane" id="fil">
                 <ul class="wrapper">
-                    <li>Accueil</li>
+                    <li><a href="index.php" title="Accueil" tabindex="<?php echo $tb += 1; ?>">Accueil</a></li>
                     <li class="current">Tableau</li>
                 </ul>
             </nav>
@@ -106,7 +105,7 @@
 
                 ?>
 				<section id="tableau" class="wrapper">
-					<a id="content" href="tableau-liste.php#liste" tabindex="<?php echo $tb += 1; ?>">Afficher le tableau sous forme de liste</a>
+					<a id="content" href="tableau-liste.php#prec" tabindex="<?php echo $tb += 1; ?>">Afficher le tableau sous forme de liste</a>
 
 					<table summary="Part du marché des navigateurs internet. Par lignes, vous trouverez par année, les parts en pourcentages des principaux navigateurs (Chrome, Firefox, Internet Explorer).">
 							<tr>
@@ -150,9 +149,17 @@
 								<td id="val6" contenteditable="true" headers="l1c4 l3c1">23,19%</td>
 							</tr> -->
 							<caption>Part du marché des navigateurs internet</caption>
-					</table>
-
-					<div id="sheh"></div>
+					</table>    
+					
+					<div id="results"></div>
+					
+					<?php 
+					
+                    if(isset($_GET['return']) && $_GET['return'] == 'true'){
+                        echo('<a href="#" id="sheh" tabindex="'.($tb += 1).'">Page tableau</a>');
+                    }
+					
+					?>
 				</section>
 		</main>
 
@@ -195,7 +202,7 @@
 
 		<script> 
 			$(document).ready(function() {
-				$("td").click(function() { 
+				$("td").focus(function() { 
 					if($(this).attr("contenteditable") == "true") {    
 						// le"id" du td doit contenir l'id de la BDD 
 						// le "name" doit contenir le nom du champ à modifier
@@ -203,24 +210,23 @@
 						var contenu_avant = $(this).text(); 
 						var id_bdd = $(this).parent().attr("id"); 
 						var champ_bdd = $(this).attr("name"); 
-							 
+                        							 
 						$(this).blur(function() { 
 							var contenu_apres = $(this).text(); 
 					 
-							if (contenu_avant != contenu_apres && isNaN(contenu_apres) == false) {
+							if (contenu_avant != contenu_apres) {
 								parametre = 'id='+id_bdd+'&champ='+champ_bdd+'&contenu='+contenu_apres; 
 								$.ajax({ 
 									url: "updatedynamique.php",  
 									type: "POST",  
 									data: parametre,  
 									success: function(html) {  
-										alert("Mise à jour effectuée !");
+                                        contenu_avant = contenu_apres; 
+                                        $("#results").html("Mise à jour de la cellule : " +champ_bdd+ " " +id_bdd);
 									} 
 								}); 
 							}
-							else {
-								alert('Ce n\'est pas un nombre');
-							}
+							
 						});
 					};
 				}); 

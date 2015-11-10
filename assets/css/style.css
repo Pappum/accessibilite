@@ -25,27 +25,6 @@ header{
 	height:120px;
 }
 
-/*header #evitement{
-	list-style: none;
-    height:20px;
-}
-
-header #evitement li{
-	display: inline-block;
-}
-
-header #evitement a{
-	position: absolute;
-    left: -99999px;
-	text-decoration: none;
-}
-
-header #evitement a:focus, header #evitement a:hover{
-	color:black;
-    position: static;
-}*/
-
-
 header #evitement{
 	list-style: none;
     height:20px;
@@ -75,7 +54,6 @@ header nav #menu{
 }
 
 header nav #menu > li{
-    width:14%;
     float:left;
     border-right: 1px solid black;
     background-color: #87CEEB;
@@ -90,6 +68,7 @@ header nav #menu a{
 	text-decoration: none;
     display: block;
     width:100%;
+    padding: 8px 20px;
 }
 
 .nav-menu {
@@ -134,7 +113,7 @@ header nav #menu a{
     display: none;
     top: 2.6em;
     margin-top: -1px;
-    width:14%;
+    width:160px;
     background-color: #fff;
 }
 
@@ -166,6 +145,7 @@ header nav #menu a{
 .sub-nav-group li a{
     width:100%;
     display: block;
+    padding:0 !important;
 }
 
 .sub-nav-group a:hover,.sub-nav-group a:focus{
@@ -220,6 +200,10 @@ header nav #recherche input[type="text"]{
 
 #fil li.current{
     color:white;
+}
+
+#fil a{
+    text-decoration: none;
 }
 
 #video{
@@ -287,6 +271,16 @@ section .bouton{
 
 #results{
     margin-top: 30px;
+}
+
+#sheh{
+    position: absolute;
+    left: -99999px;
+	text-decoration: none;
+}
+
+#sheh:focus{
+    position: static;
 }
 
 footer{
