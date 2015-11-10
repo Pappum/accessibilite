@@ -14,13 +14,14 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="assets/css/knacss-unminified.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	</head>
 	<body>
 	
 	<?php 
         // Init variable tabindex
-        $i = 0;
+        $tb = 0;
     ?>
 		<header role="banner">
            <div class="wrapper">
@@ -34,46 +35,46 @@
                 
                 <!-- Autre solution -->
                 <div id="evitement">
-                    <button onclick="window.location.hash='#owl-demo'" tabindex="<?php echo $i += 1; ?>" accesskey="c">Aller au contenu</button>
-                    <button onclick="window.location.hash='#menu'" tabindex="<?php echo $i += 1; ?>" accesskey="m">Aller au menu</button>
-                    <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $i += 1; ?>" accesskey="r">Aller à la recherche</button>
+                    <button onclick="window.location.hash='#content'" tabindex="<?php echo $tb += 1; ?>" accesskey="c">Aller au contenu</button>
+                    <button onclick="window.location.hash='#menu'" tabindex="<?php echo $tb += 1; ?>" accesskey="m">Aller au menu</button>
+                    <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $tb += 1; ?>" accesskey="r">Aller à la recherche</button>
                 </div>
                 
                 
                 <h1>Web Agency</h1>
                 <nav id="navigation" role="navigation" aria-label="Menu principal">
                     <ul role="menubar" aria-hidden="false" class="nav-menu" id="menu">
-                        <li role="menuitem"><a href="index.php" title="Accueil" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
+                        <li role="menuitem"><a href="index.php" title="Accueil" tabindex="<?php echo $tb += 1; ?>">Accueil</a></li>
 
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
-                            <a href="#" class="active" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a>
+                            <a href="#" class="active" title="Fonctionnalités" tabindex="<?php echo $tb += 1; ?>">Fonctionnalités</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group" aria-hidden="true">
-                                    <li><a href="video.php" title="Vidéo" tabindex="<?php echo $i += 1; ?>">Vidéo</a></li>
-                                    <li><a href="calendrier.php" title="Calendrier" tabindex="<?php echo $i += 1; ?>">Calendrier</a></li>
-                                    <li><a href="#" class="active" title="Tableau (rubrique courante)" tabindex="<?php echo $i += 1; ?>">Tableau</a></li>
+                                    <li><a href="video.php" title="Vidéo" tabindex="<?php echo $tb += 1; ?>">Vidéo</a></li>
+                                    <li><a href="calendrier.php" title="Calendrier" tabindex="<?php echo $tb += 1; ?>">Calendrier</a></li>
+                                    <li><a href="#" class="active" title="Tableau (rubrique courante)" tabindex="<?php echo $tb += 1; ?>">Tableau</a></li>
                                 </ul>
                             </div>
                         </li>
                         
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
-                            <a href="#" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a>
+                            <a href="#" title="Nos services" tabindex="<?php echo $tb += 1; ?>">Nos services</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group" aria-hidden="true">
-                                    <li><a href="#" title="Site internet" tabindex="<?php echo $i += 1; ?>">Site internet</a></li>
-                                    <li><a href="#" title="Webdesign" tabindex="<?php echo $i += 1; ?>">Webdesign</a></li>
-                                    <li><a href="#" title="Solution mobile" tabindex="<?php echo $i += 1; ?>">Solution mobile</a></li>
+                                    <li><a href="#" title="Site internet" tabindex="<?php echo $tb += 1; ?>">Site internet</a></li>
+                                    <li><a href="#" title="Webdesign" tabindex="<?php echo $tb += 1; ?>">Webdesign</a></li>
+                                    <li><a href="#" title="Solution mobile" tabindex="<?php echo $tb += 1; ?>">Solution mobile</a></li>
                                 </ul>
                             </div>
                         </li>
 
-                        <li role="menuitem"><a href="contact.php" title="Contact" tabindex="<?php echo $i += 1; ?>">Contact</a></li>
+                        <li role="menuitem"><a href="contact.php" title="Contact" tabindex="<?php echo $tb += 1; ?>">Contact</a></li>
                     </ul>
 
                     <div id="recherche" role="search">
                         <form>
-                            <input tabindex="<?php echo $i += 1; ?>" type="text" placeholder="Rechercher" title="Recherche par mots-clés" />
-                            <input tabindex="<?php echo $i += 1; ?>" type="submit" value="Ok" />
+                            <input tabindex="<?php echo $tb += 1; ?>" type="text" placeholder="Rechercher" title="Recherche par mots-clés" />
+                            <input tabindex="<?php echo $tb += 1; ?>" type="submit" value="Ok" />
                         </form>
                     </div>
                 </nav>
@@ -81,28 +82,31 @@
 		</header>
 
 		<main id="contenu" role="main">
-			<section>
+            <nav role="navigation" aria-label="Fil d'Ariane" id="fil">
+                <ul class="wrapper">
+                    <li>Accueil</li>
+                    <li class="current">Tableau</li>
+                </ul>
+            </nav>
 				<?php
+                    // A changer en fonction du serveur
 
-			// A changer en fonction du serveur
-		
-			$adresse = 'localhost';
-			$user = 'root';
-			$password = 'root';
-			$base = 'test';
-		
-			$db = mysqli_connect($adresse, $user, $password, $base) or die(mysqli_connect_error());
+                    $adresse = 'localhost';
+                    $user = 'root';
+                    $password = 'root';
+                    $base = 'test';
 
-			$reqValue = "
-					SELECT annee, chrome, firefox, ie
-					FROM navigateur
-			";
-			$rValue = mysqli_query($db, $reqValue) or die(mysqli_connect_error());
-		
-		?>
-			</section>        
-				<section id="tableau">
-					<a href="tableau-liste.html#liste">Accéder à la liste</a>
+                    $db = mysqli_connect($adresse, $user, $password, $base) or die(mysqli_connect_error());
+
+                    $reqValue = "
+                            SELECT annee, chrome, firefox, ie
+                            FROM navigateur
+                    ";
+                    $rValue = mysqli_query($db, $reqValue) or die(mysqli_connect_error());
+
+                ?>
+				<section id="tableau" class="wrapper">
+					<a id="content" href="tableau-liste.php#liste" tabindex="<?php echo $tb += 1; ?>">Afficher le tableau sous forme de liste</a>
 
 					<table summary="Part du marché des navigateurs internet. Par lignes, vous trouverez par année, les parts en pourcentages des principaux navigateurs (Chrome, Firefox, Internet Explorer).">
 							<tr>
@@ -127,9 +131,9 @@
 									echo '
 									<tr id="'.$data['annee'].'">
 										<th id="l'.($i+1).'c1" headers="l1c1" scope="row">'.$data['annee'].'</th>
-										<td contenteditable="true" headers="l1c2 l'.($i+1).'c1" name="chrome">'.$data['chrome'].'</td>
-										<td contenteditable="true" headers="l1c3 l'.($i+1).'c1" name="firefox">'.$data['firefox'].'</td>
-										<td contenteditable="true" headers="l1c4 l'.($i+1).'c1" name="ie">'.$data['ie'].'</td>
+										<td tabindex="'.($tb += 1).'" contenteditable="true" headers="l1c2 l'.($i+1).'c1" name="chrome">'.$data['chrome'].'</td>
+										<td tabindex="'.($tb += 1).'" contenteditable="true" headers="l1c3 l'.($i+1).'c1" name="firefox">'.$data['firefox'].'</td>
+										<td tabindex="'.($tb += 1).'" contenteditable="true" headers="l1c4 l'.($i+1).'c1" name="ie">'.$data['ie'].'</td>
 									</tr>';
 								}
 							?>
@@ -148,8 +152,6 @@
 							<caption>Part du marché des navigateurs internet</caption>
 					</table>
 
-					<input type="submit" name="save" value="Sauvegarder" id="save"/>
-
 					<div id="sheh"></div>
 				</section>
 		</main>
@@ -160,9 +162,9 @@
             		<div>
             			<ul>
                             <span>Menu</span>
-                            <li><a href="#" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a></li>
-                            <li><a href="#" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a></li>
-                            <li><a href="#" title="Contact" tabindex="<?php echo $i += 1; ?>">Contact</a></li>
+                            <li><a href="#" title="Fonctionnalités" tabindex="<?php echo $tb += 1; ?>">Fonctionnalités</a></li>
+                            <li><a href="#" title="Nos services" tabindex="<?php echo $tb += 1; ?>">Nos services</a></li>
+                            <li><a href="#" title="Contact" tabindex="<?php echo $tb += 1; ?>">Contact</a></li>
 						</ul>
             		</div>
             		<div>
@@ -172,8 +174,8 @@
             		<div>
             		    <span>Réseaux sociaux</span>
             		    <p>
-            		        <a href="http://www.facebook.com" title="Lien page Facebook" tabindex="<?php echo $i += 1; ?>"><img src="assets/images/fb.png" alt="Logo Facebook"></a>
-            		        <a href="http://www.twitter.com" title="Lien page Twitter" tabindex="<?php echo $i += 1; ?>"><img src="assets/images/tw.png" alt="Logo Twitter"></a>
+            		        <a href="http://www.facebook.com" title="Lien page Facebook" tabindex="<?php echo $tb += 1; ?>"><img src="assets/images/fb.png" alt="Logo Facebook"></a>
+            		        <a href="http://www.twitter.com" title="Lien page Twitter" tabindex="<?php echo $tb += 1; ?>"><img src="assets/images/tw.png" alt="Logo Twitter"></a>
             		    </p>
             		</div>
             		<div>

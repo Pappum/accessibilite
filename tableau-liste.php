@@ -14,14 +14,15 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="assets/css/knacss-unminified.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	</head>
 	<body>
 	
-	<?php 
-        // Init variable tabindex
-        $i = 0;
-    ?>
+        <?php 
+            // Init variable tabindex
+            $i = 0;
+        ?>
 		<header role="banner">
            <div class="wrapper">
                 
@@ -34,7 +35,7 @@
                 
                 <!-- Autre solution -->
                 <div id="evitement">
-                    <button onclick="window.location.hash='#owl-demo'" tabindex="<?php echo $i += 1; ?>" accesskey="c">Aller au contenu</button>
+                    <button onclick="window.location.hash='#content'" tabindex="<?php echo $i += 1; ?>" accesskey="c">Aller au contenu</button>
                     <button onclick="window.location.hash='#menu'" tabindex="<?php echo $i += 1; ?>" accesskey="m">Aller au menu</button>
                     <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $i += 1; ?>" accesskey="r">Aller à la recherche</button>
                 </div>
@@ -80,8 +81,14 @@
             </div>
 		</header>
 
-		<main class="wrapper" id="contenu" role="main">
-            <section>
+		<main id="contenu" role="main">
+            <nav role="navigation" aria-label="Fil d'Ariane" id="fil">
+                <ul class="wrapper">
+                    <li>Accueil</li>
+                    <li class="current">Liste tableau</li>
+                </ul>
+            </nav>
+            <section id="liste-tableau" class="wrapper">
                 <p id="liste">Part du marché des navigateurs internet</p>
                 
                 <ul>
@@ -102,7 +109,8 @@
                     </ul>
                 </ul>
                 
-                <a href="about.html#sheh">Revenir</a>
+                <br>
+                <a id="content" href="tableau.php#sheh" tabindex="<?php echo $i += 1; ?>">Revenir sur la page précédente</a>
 			</section>
 		</main>
 
@@ -134,6 +142,14 @@
             	</div>
             </div>
 		</footer>
+		
+		<!-- Import Jquery -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+		<script src="assets/js/jquery-accessibleMegaMenu.js"></script>
+
+		<script src="assets/owl-carousel/owl.carousel.js"></script>
+		<script src="assets/js/function.js"></script>
+
 
 	</body>
 </html>

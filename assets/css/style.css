@@ -281,6 +281,14 @@ section .bouton{
     outline: none;
 }
 
+#tableau,#liste-tableau{
+    margin-top: 40px;
+}
+
+#results{
+    margin-top: 30px;
+}
+
 footer{
 	background-color: #F5F5F5;
     padding: 20px;
