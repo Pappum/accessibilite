@@ -43,7 +43,7 @@
                 <h1>Web Agency</h1>
                 <nav id="navigation" role="navigation" aria-label="Menu principal">
                     <ul role="menubar" aria-hidden="false" class="nav-menu" id="menu">
-                        <li role="menuitem"><a href="#" title="Accueil" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
+                        <li role="menuitem"><a href="index.php" title="Accueil" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
 
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
                             <a href="#" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a>
@@ -126,6 +126,7 @@
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 		<script src="assets/js/jquery-accessibleMegaMenu.js"></script>
 
+        <script src="assets/owl-carousel/owl.carousel.js"></script>
         <script src="assets/js/function.js"></script>
         
 	</body>

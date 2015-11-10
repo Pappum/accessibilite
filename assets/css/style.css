@@ -396,4 +396,7 @@ table{
 		width: 100%;
 		min-width: 320px;
 	}
+
+    #service div.grid-3-small-1 div { margin-bottom: 30px; }
+    #service div.grid-3-small-1 div:last-of-type { margin-bottom: 0; }
 }
