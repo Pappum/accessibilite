@@ -117,6 +117,7 @@
                          <tbody>
                             <tr><td id="errMsg" colspan="7">Javascript doit être activité</td></tr>
                          </tbody>
+                         <caption>Choisir la date d'inscription</caption>
                       </table>
                       <div id="bn_prev-label" class="offscreen">Mois précédent</div>
                       <div id="bn_next-label" class="offscreen">Mois suivant</div>
