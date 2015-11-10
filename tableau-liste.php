@@ -137,7 +137,7 @@
             		    </p>
             		</div>
             		<div>
-            			<p>© Web Agency - <a href="#" title="Mentions légales">Mentions légales</a></p>
+            			<p>© Web Agency - <a tabindex="<?php echo $i += 1; ?>" href="#" title="Mentions légales">Mentions légales</a></p>
                         <p><a tabindex="<?php echo $i += 1; ?>" href="accessibilite.php" title="Accessibilité">Accessibilité</a></p>
             		</div>
             	</div>
