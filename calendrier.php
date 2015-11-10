@@ -62,7 +62,7 @@
                             <a href="#" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group" aria-hidden="true">
-                                    <li><a href="#" title="Site internet" tabindex="<?php echo $i += 1; ?>">Site internet</a></li>
+                                    <li><a href="site.php" title="Site internet" tabindex="<?php echo $i += 1; ?>">Site internet</a></li>
                                     <li><a href="#" title="Webdesign" tabindex="<?php echo $i += 1; ?>">Webdesign</a></li>
                                     <li><a href="#" title="Solution mobile" tabindex="<?php echo $i += 1; ?>">Solution mobile</a></li>
                                 </ul>
