@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Contact | Agence web à Haguenau</title>
+		<title>Web Agency | Agence web à Haguenau</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -89,7 +89,7 @@
                 </ul>
             </nav>
 			<section id="formulaire" class="wrapper">
-                <h1>Contact</h1>
+                <h2>Contact</h2>
 				<form>
                     <div>
                         <label for="nom">
@@ -134,8 +134,8 @@
                         <textarea id="message" name="message" required aria-invalid="true" tabindex="<?php echo $i += 1; ?>"></textarea>
                     </div>
                     <div>
-                        <input type="submit" value="Envoyer" onclick="if(envoyer()){submit();}"/>
-                        <input type="reset" value="Annuler" />
+                        <input tabindex="<?php echo $i += 1; ?>" type="submit" value="Envoyer" onclick="if(envoyer()){submit();}"/>
+                        <input tabindex="<?php echo $i += 1; ?>" type="reset" value="Annuler" />
                     </div>
 				</form>
 			</section>
@@ -165,6 +165,7 @@
             		</div>
             		<div>
             			<p>© Web Agency - <a href="#" title="Mentions légales">Mentions légales</a></p>
+            			<p><a tabindex="<?php echo $i += 1; ?>" href="accessibilite.php" title="Accessibilité">Accessibilité</a></p>
             		</div>
             	</div>
             </div>

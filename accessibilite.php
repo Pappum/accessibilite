@@ -14,15 +14,15 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="assets/css/knacss-unminified.css">
 		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	</head>
 	<body>
 	
-        <?php 
-            // Init variable tabindex
-            $i = 0;
-        ?>
+	<?php 
+        // Init variable tabindex
+        $i = 0;
+    ?>
 		<header role="banner">
            <div class="wrapper">
                 
@@ -35,7 +35,7 @@
                 
                 <!-- Autre solution -->
                 <div id="evitement">
-                    <button onclick="window.location.hash='#content'" tabindex="<?php echo $i += 1; ?>" accesskey="c">Aller au contenu</button>
+                    <button onclick="window.location.hash='#owl-demo'" tabindex="<?php echo $i += 1; ?>" accesskey="c">Aller au contenu</button>
                     <button onclick="window.location.hash='#menu'" tabindex="<?php echo $i += 1; ?>" accesskey="m">Aller au menu</button>
                     <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $i += 1; ?>" accesskey="r">Aller à la recherche</button>
                 </div>
@@ -82,35 +82,14 @@
 		</header>
 
 		<main id="contenu" role="main">
-            <nav role="navigation" aria-label="Fil d'Ariane" id="fil">
+			<nav role="navigation" aria-label="Fil d'Ariane" id="fil">
                 <ul class="wrapper">
-                    <li><a href="index.php" title="Accueil" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
-                    <li class="current">Liste tableau</li>
+                    <li><a href="index.php" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
+                    <li class="current">Accessibilite</li>
                 </ul>
             </nav>
-            <section id="liste-tableau" class="wrapper">
-                <p id="liste">Part du marché des navigateurs internet</p>
-                
-                <ul>
-                    <li>2015</li>
-                    <ul>
-                        <li>Chrome (53,91%)</li>
-                        <li>Firefox (17,83%)</li>
-                        <li>IE (19,24%)</li>
-                    </ul>
-                </ul>
-                
-                <ul>
-                    <li>2014</li>
-                    <ul>
-                        <li>Chrome (48,78%)</li>
-                        <li>Firefox (19,57%)</li>
-                        <li>IE (23,19%)</li>
-                    </ul>
-                </ul>
-                
-                <br>
-                <a id="prec" href="tableau.php?return=true#sheh" tabindex="<?php echo $i += 1; ?>">Revenir sur la page précédente</a>
+			<section id="formulaire" class="wrapper">
+				
 			</section>
 		</main>
 
@@ -138,19 +117,20 @@
             		</div>
             		<div>
             			<p>© Web Agency - <a href="#" title="Mentions légales">Mentions légales</a></p>
-                        <p><a tabindex="<?php echo $i += 1; ?>" href="accessibilite.php" title="Accessibilité">Accessibilité</a></p>
+                        <p><a tabindex="<?php echo $i += 1; ?>" href="#" title="Accessibilité">Accessibilité</a></p>
             		</div>
             	</div>
             </div>
 		</footer>
+		
 		
 		<!-- Import Jquery -->
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 		<script src="assets/js/jquery-accessibleMegaMenu.js"></script>
 
 		<script src="assets/owl-carousel/owl.carousel.js"></script>
-		<script src="assets/js/function.js"></script>
-
-
+        <script src="assets/js/function.js"></script>
+		<script src="assets/js/form.js"></script>
+		
 	</body>
 </html>

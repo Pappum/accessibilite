@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Tableau | Agence web à Haguenau</title>
+		<title>Web Agency | Agence web à Haguenau</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
@@ -187,6 +187,7 @@
             		</div>
             		<div>
             			<p>© Web Agency - <a href="#" title="Mentions légales">Mentions légales</a></p>
+            			<p><a tabindex="<?php echo $i += 1; ?>" href="accessibilite.php" title="Accessibilité">Accessibilité</a></p>
             		</div>
             	</div>
             </div>
