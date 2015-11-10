@@ -379,6 +379,14 @@ table{
 }
 
 @media (max-width: 992px) {
+    header ul li,
+    header div.sub-nav { width: 25%; }
+
+    header nav #recherche {
+        position: relative;
+        right: -70%;
+    }
+
     footer div.grid-4-medium-2 div:last-of-type,
     footer div.grid-4-medium-2 div:nth-last-of-type(2) { margin-top: 10px; }
 }
@@ -388,11 +396,4 @@ table{
 		width: 100%;
 		min-width: 320px;
 	}
-
-    header ul li { width: 25%; }
-
-    header nav #recherche {
-        position: relative;
-        right: -70%;
-    }
 }
