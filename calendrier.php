@@ -128,7 +128,7 @@
 
 		<footer role="contentinfo">
             <div class="wrapper">
-            	<div class="grid-4-small-1">
+            	<div class="grid-4-medium-2">
             		<div>
             			<ul>
                             <span>Menu</span>

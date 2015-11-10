@@ -299,7 +299,6 @@ section .bouton{
 
 footer{
 	background-color: #F5F5F5;
-    padding: 20px;
 }
 
 footer span{
@@ -321,6 +320,13 @@ footer p{
 
 footer img{
     margin-right: 5px;
+}
+
+footer ul { padding: 0; }
+
+footer div.grid-4-medium-2 {
+    padding: 20px;
+    text-align: center;
 }
 
 #owl-demo .item img{
@@ -362,6 +368,8 @@ table{
 	margin-bottom: 0rem !important;
 }
 
+
+
 @media (min-width: 992px) and (max-width: 1200px) {
 	.wrapper{ width: 992px; }
 }
@@ -370,9 +378,21 @@ table{
 	.wrapper{ width: 768px; }
 }
 
+@media (max-width: 992px) {
+    footer div.grid-4-medium-2 div:last-of-type,
+    footer div.grid-4-medium-2 div:nth-last-of-type(2) { margin-top: 10px; }
+}
+
 @media (max-width: 768px) {
 	.wrapper{ 
 		width: 100%;
 		min-width: 320px;
 	}
+
+    header ul li { width: 25%; }
+
+    header nav #recherche {
+        position: relative;
+        right: -70%;
+    }
 }
