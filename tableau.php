@@ -35,7 +35,7 @@
                 
                 <!-- Autre solution -->
                 <div id="evitement">
-                    <button onclick="window.location.hash='#content'" tabindex="<?php echo $tb += 1; ?>" accesskey="c">Aller au contenu</button>
+                    <button onclick="window.location.hash='#content'" tabindex="<?php echo $tb += 1; ?>" accesskey="p">Aller au contenu</button>
                     <button onclick="window.location.hash='#menu'" tabindex="<?php echo $tb += 1; ?>" accesskey="m">Aller au menu</button>
                     <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $tb += 1; ?>" accesskey="r">Aller à la recherche</button>
                 </div>

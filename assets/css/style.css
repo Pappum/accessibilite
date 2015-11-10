@@ -60,7 +60,7 @@ header nav #menu > li{
 }
 
 header nav #menu .active{
-	color:white;
+	color:red;
 }
 
 header nav #menu a{
@@ -367,8 +367,6 @@ footer div.grid-4-medium-2 {
 table{
 	margin-bottom: 0rem !important;
 }
-
-
 
 @media (min-width: 992px) and (max-width: 1200px) {
 	.wrapper{ width: 992px; }
