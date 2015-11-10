@@ -14,7 +14,6 @@
 		<!-- Styles -->
 		<link rel="stylesheet" href="assets/css/knacss-unminified.css">
 		<link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 	</head>
 	<body>
@@ -35,7 +34,7 @@
                 
                 <!-- Autre solution -->
                 <div id="evitement">
-                    <button onclick="window.location.hash='#content'" tabindex="<?php echo $i += 1; ?>" accesskey="c">Aller au contenu</button>
+                    <button onclick="window.location.hash='#owl-demo'" tabindex="<?php echo $i += 1; ?>" accesskey="c">Aller au contenu</button>
                     <button onclick="window.location.hash='#menu'" tabindex="<?php echo $i += 1; ?>" accesskey="m">Aller au menu</button>
                     <button onclick="window.location.hash='#recherche'" tabindex="<?php echo $i += 1; ?>" accesskey="r">Aller à la recherche</button>
                 </div>
@@ -44,7 +43,7 @@
                 <h1>Web Agency</h1>
                 <nav id="navigation" role="navigation" aria-label="Menu principal">
                     <ul role="menubar" aria-hidden="false" class="nav-menu" id="menu">
-                        <li role="menuitem"><a href="index.php" title="Accueil" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
+                        <li role="menuitem"><a href="#" title="Accueil" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
 
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
                             <a href="#" title="Fonctionnalités" tabindex="<?php echo $i += 1; ?>">Fonctionnalités</a>
@@ -58,10 +57,10 @@
                         </li>
                         
                         <li role="menuitem" aria-haspopup="true" class="nav-item">
-                            <a href="#" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a>
+                            <a href="#" class="active" title="Nos services" tabindex="<?php echo $i += 1; ?>">Nos services</a>
                             <div class="sub-nav">
                                 <ul class="sub-nav-group" aria-hidden="true">
-                                    <li><a href="#" title="Site internet" tabindex="<?php echo $i += 1; ?>">Site internet</a></li>
+                                    <li><a href="#" class="active" title="Site internet (rubrique courante)" tabindex="<?php echo $i += 1; ?>">Site internet</a></li>
                                     <li><a href="#" title="Webdesign" tabindex="<?php echo $i += 1; ?>">Webdesign</a></li>
                                     <li><a href="#" title="Solution mobile" tabindex="<?php echo $i += 1; ?>">Solution mobile</a></li>
                                 </ul>
@@ -82,24 +81,14 @@
 		</header>
 
 		<main id="contenu" role="main">
-			<nav role="navigation" aria-label="Fil d'Ariane" id="fil">
-                <ul class="wrapper">
-                    <li><a href="index.php" tabindex="<?php echo $i += 1; ?>">Accueil</a></li>
-                    <li class="current">Accessibilité</li>
+            <section class="wrapper">
+                <h2>Créations de sites internet</h2>
+                <ul>
+                    <li>Utilisation du <abbr title="Hypertext Markup Language">HTML</abbr></li>
+                    <li>Utilisation du <abbr title="Cascading Style Sheets">CSS</abbr></li>
+                    <li>Utilisation du <abbr title="Javascript">JS</abbr></li>
                 </ul>
-            </nav>
-			<section id="content" class="wrapper">
-				<h2>Raccourcis clavier</h2>
-				<p>Ctrl + c : Aller au contenu</p>
-				<p>Ctrl + m : Aller au menu</p>
-				<p>Ctrl + r : Aller à la recherche</p>
-				
-				<h2>Navigation Slider</h2>
-				<p>Utiliser les flèches directionnelles pour changer de slide</p>
-				
-				<h2>Calendrier</h2>
-				<p>Utiliser les flèches directionnelles pour choisir le jour, appuyer sur tab et entré pour changer de mois</p>
-			</section>
+            </section>
 		</main>
 
 		<footer role="contentinfo">
@@ -126,7 +115,7 @@
             		</div>
             		<div>
             			<p>© Web Agency - <a tabindex="<?php echo $i += 1; ?>" href="#" title="Mentions légales">Mentions légales</a></p>
-                        <p><a tabindex="<?php echo $i += 1; ?>" href="#" title="Accessibilité">Accessibilité</a></p>
+            			<p><a tabindex="<?php echo $i += 1; ?>" href="accessibilite.php" title="Accessibilité">Accessibilité</a></p>
             		</div>
             	</div>
             </div>
@@ -137,9 +126,7 @@
 		<script src="assets/js/jquery-2.1.4.min.js"></script>
 		<script src="assets/js/jquery-accessibleMegaMenu.js"></script>
 
-		<script src="assets/owl-carousel/owl.carousel.js"></script>
         <script src="assets/js/function.js"></script>
-		<script src="assets/js/form.js"></script>
-		
+        
 	</body>
 </html>
